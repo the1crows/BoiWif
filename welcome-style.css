@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
 
 /* Add this to your existing CSS file (style.css or welcome-style.css) */
 body {
-    background-image: url('path/to/your/background-image.jpg'); /* Update this path */
+    background-image: url('media/imgs/media.png'); /* Update this path */
     background-size: cover; /* Make the background cover the entire screen */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
