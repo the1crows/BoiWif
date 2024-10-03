@@ -60,16 +60,19 @@ header {
 
 h1 {
   color: #0e7ee2;
+  /* -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #1b2021; */
   margin: 0;
   margin-left: 70px;
   font-size: 38px;
-  text-shadow: -1px -1px 0 #1b2021, 1px -1px 0 #1b2021, -1px 1px 0 #1b2021, 1px 1px 0 #1b2021;
+  text-shadow: -1px -1px 0 #1b2021, 1px -1px 0 #1b2021, -1px 1px 0 #1b2021,
+    1px 1px 0 #1b2021;
 }
+
 .wif {
   color: #f99a1c;
 }
 
-}
 .and {
   color: #f99a1c;
 }
