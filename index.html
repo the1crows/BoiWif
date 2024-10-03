@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,14 +10,23 @@
     <meta property="og:title" content="waddle waddle" />
     <meta property="og:description" content="get your glue today $BoiWifDuck" />
     <meta property="og:url" content="index.html" />
-    <meta property="og:image" content="link-preview.jpg" />
+    <meta
+      property="og:image"
+      content="link-preview.jpg"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="$BoiWifDuck" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="$BoiWifDuck" />
-    <meta name="twitter:description" content="get your glue today $BoiWifDuck" />
+    <meta
+      name="twitter:description"
+      content="get your glue today $BoiWifDuck"
+    />
     <meta name="twitter:url" content="index.html" />
-    <meta name="twitter:image" content="link-preview.jpg" />
+    <meta
+      name="twitter:image"
+      content="link-preview.jpg"
+    />
     <!-- END OF LINK PREVIEW TAGS -->
 
     <link rel="stylesheet" href="style.css" />
@@ -25,64 +35,32 @@
       src="https://boiwifduck.com/kit.fontawesome.com/91bbcb1b14.js"
       crossorigin="anonymous"
     ></script>
-    <title>Enter And Get Your Glue</title>
-</head>
-<body>
+    <title>Enter Boi Wif Duck</title>
+  </head>
+  <body>
     <div class="centerer">
-        <!-- Orientation Alert -->
-        <div id="orientationAlert" style="display: none;">
-            <div class="turnit">
-                <div class="glueturner"></div>
-                <p class="btn">turn ur device wide-ways</p>
-            </div>
+      <div id="orientationAlert" style="display: none">
+        <div class="turnit">
+          <div class="glueturner"></div>
+          <p class="btn">turn ur device wide-ways</p>
         </div>
+      </div>
+      <div id="welcomeScreen">
+        <div class="welcome-stuff">
+          <button id="enterButton" class="btn clickable">Enter</button>
+          <img src="media/imgs/intro.png" alt="duck an glue" />
+        </div>
+      </div>
 
-        <!-- Welcome Screen -->
-        <div id="welcomeScreen">
-            <div class="welcome-stuff">
-                <button id="enterButton" class="btn clickable">Enter</button>
-                <img src="media/imgs/intro.png" alt="duck and glue" />
-            </div>
-        </div>
-
-        <!-- Video Screen -->
-        <div id="videoScreen" style="display: none;">
-            <video id="introVideo" width="800" autoplay>
-                <source src="media/video/intro-glue.mp4" type="video/mp4" />
-                Video doesn't work because you sniffed too much glue.
-            </video>
-            <button id="goToMainSite" style="display: none;">Enter Website</button>
-        </div>
+      <div id="videoScreen" style="display: none">
+        <video id="introVideo" width="800" autoplay>
+          <source src="media/video/intro-glue.mp4" type="video/mp4" />
+          Video doesn't work because you sniffed too much glue.
+        </video>
+        <button id="goToMainSite" style="display: none">Enter Website</button>
+      </div>
     </div>
+    <script src="welcome-script.js"></script>
+  </body>
 
-    <!-- JavaScript to Handle Transitions -->
-    <script>
-        // Wait for the DOM content to load
-        document.addEventListener('DOMContentLoaded', function() {
-            // Grab elements
-            const enterButton = document.getElementById('enterButton');
-            const welcomeScreen = document.getElementById('welcomeScreen');
-            const videoScreen = document.getElementById('videoScreen');
-            const goToMainSiteButton = document.getElementById('goToMainSite');
-            const introVideo = document.getElementById('introVideo');
-
-            // Hide welcome screen, show video screen on "Enter" click
-            enterButton.addEventListener('click', function() {
-                welcomeScreen.style.display = 'none';
-                videoScreen.style.display = 'block';
-            });
-
-            // When video ends, show the "Enter Website" button
-            introVideo.addEventListener('ended', function() {
-                goToMainSiteButton.style.display = 'block';
-            });
-
-            // Button for navigating to the main site
-            goToMainSiteButton.addEventListener('click', function() {
-                // Here you can redirect to your main website
-                window.location.href = 'main-site.html'; // Change to the actual main site URL
-            });
-        });
-    </script>
-</body>
 </html>
