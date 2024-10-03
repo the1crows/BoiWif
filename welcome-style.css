@@ -20,6 +20,14 @@ body::-webkit-scrollbar {
   font-weight: bold;
 }
 
+.wif {
+  color: #f99a1c;
+}
+
+.and {
+  color: #f99a1c;
+}
+
 #videoScreen {
   position: fixed;
   top: 0;
